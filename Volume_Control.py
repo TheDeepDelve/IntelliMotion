@@ -1,14 +1,14 @@
 import cv2
 import numpy as np
-from ComputerVisionProject import HandTrackingModule as htm
+import HandTrackingModule as htm
 import math
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
 cap=cv2.VideoCapture(0)
-cap.set(3,1080) #width set to 1080pixels
-cap.set(4,1080) # height....
+cap.set(3,1080)
+cap.set(4,1080)
 pTime=0 
 
 detector=htm.handDetector()

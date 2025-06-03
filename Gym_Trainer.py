@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 import time
-from ComputerVisionProject import PoseTrackingModule as pm
+import PoseTrackingModule as pm
 
-#cap = cv2.VideoCapture("Gym_Videos/1.mp4")
+#cap = cv2.VideoCapture("PoseVideos/1.mp4")
 cap = cv2.VideoCapture(0)
 detector = pm.poseDetector()
 count = 0
@@ -23,9 +23,9 @@ while True:
         bar = np.interp(angle, (40, 160), (400, 100))
 
         if percentage >= 100:
-            bar_color = (0, 255, 0)#grn
+            bar_color = (0, 255, 0)
         else:
-            bar_color = (0, 0, 255)#red
+            bar_color = (0, 0, 255)
 
         cv2.rectangle(img, (50, 100), (85, 400), bar_color, 3)
         cv2.rectangle(img, (50, int(bar)), (85, 400),bar_color, cv2.FILLED)
