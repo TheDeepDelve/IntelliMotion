@@ -40,9 +40,6 @@ class handDetector():
                 cv2.circle(img, (cx, cy), 7, (255, 0, 0), cv2.FILLED)
         return lmList
 
-
-
-
 def main():
     pTime = 0
     cTime = 0
@@ -53,7 +50,7 @@ def main():
         img=detector.findHands(img)
         lmList=detector.findPosition(img);
         if len(lmList)!=0:
-            print(lmList[4]); #4 is no. for tip of thumb,we're printing the locations of thumb only
+            print(lmList[4]); #4 is landmark no. for tip of thumb,to print the locations of thumb only
         cTime = time.time()
         fps = 1 / (cTime - pTime)
         pTime = cTime
@@ -61,8 +58,6 @@ def main():
 
         cv2.imshow("Image", img)
         cv2.waitKey(1)
-
-
 
 if __name__ == "__main__":
     main()

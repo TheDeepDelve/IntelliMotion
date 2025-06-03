@@ -51,7 +51,7 @@ while True:
             cv2.circle(img, (cx, cy), 10, (2, 113, 72), cv2.FILLED)
 
     cv2.imshow("Volume Control", img)
-    cv2.waitKey(1) #1ms delay between frame rates
+    cv2.waitKey(1)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
