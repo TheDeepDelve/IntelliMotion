@@ -1,10 +1,26 @@
-# IntelliMotion: Intelligent Motion Analysis with MediaPipe and OpenCV
+# IntelliMotion: Motion Analysis with MediaPipe and OpenCV
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![Made with OpenCV](https://img.shields.io/badge/Made%20with-OpenCV-brightgreen.svg)](https://opencv.org/)
 [![Powered by MediaPipe](https://img.shields.io/badge/Powered%20by-MediaPipe-orange.svg)](https://mediapipe.dev/)
 
 IntelliMotion is a Python-based application designed for real-time intelligent motion analysis using Google's MediaPipe framework and OpenCV. It focuses on leveraging MediaPipe's powerful solutions (e.g., Pose, Hands, Face Mesh) to detect and track human body landmarks, enabling various motion understanding capabilities.
+
+**(Consider adding a GIF or screenshot here of the system in action, showcasing the MediaPipe landmarks, e.g., a pose skeleton)**
+<!--
+E.g.,
+![IntelliMotion MediaPipe Demo GIF](link_to_your_gif_or_image.gif)
+-->
+
+## Table of Contents
+
+*   [Key Features](#key-features)
+*   [Technologies Used](#technologies-used)
+*   [Getting Started](#getting-started)
+    *   [Prerequisites](#prerequisites)
+    *   [Installation](#installation)
+    *   [Running IntelliMotion](#running-intellimotion)
+*   [Configuration](#configuration)
 
 ## Key Features
 
@@ -91,7 +107,7 @@ The main script is typically `main.py`. You can run it from the command line.
 
 **(Review and update the arguments above to match your `main.py`'s `argparse` setup. The arguments for MediaPipe solutions can vary.)**
 
-## ⚙️ Configuration
+## Configuration
 
 *   **MediaPipe Solution Parameters:** Confidence thresholds, model complexity (for some solutions like Pose), and other solution-specific parameters can often be configured during the initialization of the MediaPipe solution in your script (e.g., `main.py`). Consider exposing these via command-line arguments if frequent changes are needed.
 *   **Visualization:** Appearance of landmarks, connections, and any drawn analytics can be customized in the drawing utility functions (likely in `utils/` or directly in `main.py`).
