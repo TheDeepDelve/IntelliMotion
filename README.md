@@ -8,20 +8,6 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 ---
 
-## Table of Contents
-
-* [Demo](#demo)
-* [Key Features](#key-features)
-* [Technologies Used](#technologies-used)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-  * [Running IntelliMotion](#running-intellimotion)
-* [Configuration](#configuration)
-* [Project Structure](#project-structure)
-* [License](#license)
-
----
 ## Demo
 
 <!-- Replace the below with your own GIF or video demo if available -->
@@ -36,6 +22,23 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
   <br/>
   <em>Pose Landmarks Example: Full-body pose estimation with skeletal connections visualized.</em>
 </p>
+
+---
+## Table of Contents
+
+* [Demo](#demo)
+  * [Gesture & System States Gallery](#gesture--system-states-gallery)
+* [Key Features](#key-features)
+* [Technologies Used](#technologies-used)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running IntelliMotion](#running-intellimotion)
+* [Configuration](#configuration)
+* [Project Structure](#project-structure)
+* [Contributing](#contributing)
+* [Contact](#contact)
+* [License](#license)
 
 ---
 
@@ -176,6 +179,37 @@ You can also explore or extend other modules (such as `HandTrackingModule.py` or
 │   └── ...
 └── ...
 ```
+
+
+---
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+To contribute:
+1. **Fork the Project**
+2. **Create your Feature Branch**
+    ```bash
+    git checkout -b feature/AmazingFeature
+    ```
+3. **Commit your Changes**
+    ```bash
+    git commit -m 'Add some AmazingFeature'
+    ```
+4. **Push to the Branch**
+    ```bash
+    git push origin feature/AmazingFeature
+    ```
+5. **Open a Pull Request**
+
+Feel free to open issues for bugs, suggestions, or questions. We appreciate your help in making IntelliMotion better!
+
+---
+
+## Contact
+
+Harsh Deep - [LinkedIn](https://www.linkedin.com/in/harshdeep7199/) - [Email](harshdeep7199@gmail.com)
 
 
 ---
