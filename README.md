@@ -8,6 +8,21 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 ---
 
+
+## Table of Contents
+
+* [Demo](#demo)
+* [Key Features](#key-features)
+* [Technologies Used](#technologies-used)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running IntelliMotion](#running-intellimotion)
+* [Configuration](#configuration)
+* [Project Structure](#project-structure)
+* [License](#license)
+---
+
 ## Demo
 
 <!-- Replace the below with your own GIF or video demo if available -->
@@ -23,41 +38,40 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
   <em>Pose Landmarks Example: Full-body pose estimation with skeletal connections visualized.</em>
 </p>
 
+---
+
+### Gesture & System States Gallery
+
+<!-- Stretched Arm States -->
 <p align="center">
   <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220"/>
+  <img src="Interface Images/Partial_Stretched_Arm.png" alt="Partial Stretched Arm" width="220"/>
   <br/>
-  <em>Full Stretched Arm: Detected pose with arm fully extended.</em>
+  <em>Left: Full Stretched Arm - Detected pose with arm fully extended.<br>Right: Partial Stretched Arm - Detected pose with arm partially extended.</em>
 </p>
+
+<!-- Volume Gestures -->
 <p align="center">
-  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="220"/>
+  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180"/>
+  <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180"/>
+  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180"/>
   <br/>
-  <em>Full Volume Gesture: Hand gesture recognized for maximum volume control.</em>
+  <em>Volume Gestures: Full, Intermediate, and Zero Volume hand gestures recognized for system control.</em>
 </p>
+
+<!-- Volume System States -->
 <p align="center">
-  <img src="Interface Images/Full_Vol_System.png" alt="Full Volume System" width="220"/>
+  <img src="Interface Images/Full_Vol_System.png" alt="Full Volume System" width="180"/>
+  <img src="Interface Images/Intermediate_Vol_System.png" alt="Intermediate Volume System" width="180"/>
+  <img src="Interface Images/Zero_Vol_System.png" alt="Zero Volume System" width="180"/>
   <br/>
-  <em>Full Volume System: System interface reflecting the recognized full volume gesture.</em>
+  <em>System Volume States: System interface reflecting full, intermediate, and zero volume gestures.</em>
 </p>
 
 <!--
 E.g.,
 ![IntelliMotion MediaPipe Demo GIF](link_to_your_gif_or_image.gif)
 -->
-
----
-
-## Table of Contents
-
-* [Demo](#demo)
-* [Key Features](#key-features)
-* [Technologies Used](#technologies-used)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-  * [Running IntelliMotion](#running-intellimotion)
-* [Configuration](#configuration)
-* [Project Structure](#project-structure)
-* [License](#license)
 
 ---
 
