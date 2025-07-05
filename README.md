@@ -23,6 +23,20 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 * [License](#license)
 ---
 
+## Table of Contents
+
+* [Demo](#demo)
+* [Key Features](#key-features)
+* [Technologies Used](#technologies-used)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running IntelliMotion](#running-intellimotion)
+* [Configuration](#configuration)
+* [Project Structure](#project-structure)
+* [License](#license)
+
+---
 ## Demo
 
 <!-- Replace the below with your own GIF or video demo if available -->
