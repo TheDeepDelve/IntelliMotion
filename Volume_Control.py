@@ -42,7 +42,7 @@ while True:
         vol = np.interp(length, [20, 230], [minVol, maxVol])
         volume.SetMasterVolumeLevel(vol, None)
 
-        #red circle at 0% vol
+        #rd circle at 0% vol
         if length<30:
             cv2.circle(img, (cx, cy), 10, (25, 0, 255), cv2.FILLED)
 

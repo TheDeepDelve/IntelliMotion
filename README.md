@@ -4,110 +4,191 @@
 [![Made with OpenCV](https://img.shields.io/badge/Made%20with-OpenCV-brightgreen.svg)](https://opencv.org/)
 [![Powered by MediaPipe](https://img.shields.io/badge/Powered%20by-MediaPipe-orange.svg)](https://mediapipe.dev/)
 
-IntelliMotion is a Python-based application designed for real-time intelligent motion analysis using Google's MediaPipe framework and OpenCV. It focuses on leveraging MediaPipe's powerful solutions (e.g., Pose, Hands, Face Mesh) to detect and track human body landmarks, enabling various motion understanding capabilities.
+IntelliMotion is a Python-based application for real-time intelligent motion analysis using Google's MediaPipe and OpenCV. It detects and tracks human body landmarks (pose, hands, face) for gesture recognition, pose estimation, and interactive applications. The modular design allows for easy extension and customization.
 
-**(Consider adding a GIF or screenshot here of the system in action, showcasing the MediaPipe landmarks, e.g., a pose skeleton)**
+---
+
+## Demo
+
+<!-- Replace the below with your own GIF or video demo if available -->
+<p align="center">
+  <img src="Hand Landmarks.png" alt="Hand Landmarks Example" width="350"/>
+  <br/>
+  <em>Hand Landmarks Example: MediaPipe detects and annotates key points on the hand in real time.</em>
+</p>
+
+<p align="center">
+  <img src="Pose Landmarks.png" alt="Pose Landmarks Example" width="350"/>
+  <br/>
+  <em>Pose Landmarks Example: Full-body pose estimation with skeletal connections visualized.</em>
+</p>
+
+<p align="center">
+  <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220"/>
+  <br/>
+  <em>Full Stretched Arm: Detected pose with arm fully extended.</em>
+</p>
+<p align="center">
+  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="220"/>
+  <br/>
+  <em>Full Volume Gesture: Hand gesture recognized for maximum volume control.</em>
+</p>
+<p align="center">
+  <img src="Interface Images/Full_Vol_System.png" alt="Full Volume System" width="220"/>
+  <br/>
+  <em>Full Volume System: System interface reflecting the recognized full volume gesture.</em>
+</p>
+
 <!--
 E.g.,
 ![IntelliMotion MediaPipe Demo GIF](link_to_your_gif_or_image.gif)
 -->
 
+---
+
 ## Table of Contents
 
-*   [Key Features](#key-features)
-*   [Technologies Used](#technologies-used)
-*   [Getting Started](#getting-started)
-    *   [Prerequisites](#prerequisites)
-    *   [Installation](#installation)
-    *   [Running IntelliMotion](#running-intellimotion)
-*   [Configuration](#configuration)
+* [Demo](#demo)
+* [Key Features](#key-features)
+* [Technologies Used](#technologies-used)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Running IntelliMotion](#running-intellimotion)
+* [Configuration](#configuration)
+* [Project Structure](#project-structure)
+* [License](#license)
+
+---
 
 ## Key Features
 
-*   **Real-time Landmark Detection:** Utilizes MediaPipe solutions (e.g., Pose, Hands, Face Mesh) for accurate and fast detection of key body landmarks.
-*   **Motion Analysis:** (Specify what kind of analysis your project does. Examples below, **please customize**)
-    *   Tracks the movement of specific landmarks.
-    *   Recognizes basic gestures or actions (if implemented).
-    *   Provides skeletal visualizations for human pose.
-*   **Versatile Input:** Works with video files (MP4, AVI, etc.) and live webcam streams.
-*   **Visual Output:** Displays detected landmarks, connections (e.g., pose skeleton), and other relevant information on the video feed.
-*   **Modular Design:** Easily extendable to incorporate different MediaPipe solutions or custom analysis modules.
-*   **Customizable:** (Specify configurable aspects. Examples below, **please customize**)
-    *   Selection of different MediaPipe solutions (e.g., Pose, Hands).
-    *   Adjustable parameters for MediaPipe models (e.g., confidence thresholds, tracking confidence).
+* **Real-time Landmark Detection:** Uses MediaPipe (Pose, Hands, Face Mesh) for fast, accurate detection of body landmarks.
+* **Gesture & Pose Recognition:** Recognizes hand gestures and body poses for interactive applications (e.g., volume control, fitness tracking).
+* **Motion Analysis:** Tracks movement of specific landmarks, recognizes basic gestures/actions, and provides skeletal visualizations.
+* **Versatile Input:** Supports video files (MP4, AVI, etc.) and live webcam streams.
+* **Visual Output:** Displays detected landmarks, connections (pose skeleton), and analytics overlays on the video feed.
+* **Modular & Extensible:** Easily add new MediaPipe solutions or custom analysis modules.
+* **Customizable:** Select MediaPipe solutions, adjust model parameters (confidence thresholds, complexity), and visualization options.
+
+---
 
 ## Technologies Used
 
-*   **Python 3.8+**
-*   **OpenCV (cv2):** For video capture, image processing, and displaying results.
-*   **MediaPipe:** For high-fidelity body landmark detection and tracking solutions (e.g., Pose, Holistic, Hands, Face Mesh).
-*   **NumPy:** For numerical operations.
+* **Python 3.8+**
+* **OpenCV (cv2):** Video capture, image processing, and display.
+* **MediaPipe:** High-fidelity body landmark detection (Pose, Holistic, Hands, Face Mesh).
+* **NumPy:** Numerical operations.
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
-*   Python 3.8 or higher
-*   Pip (Python package installer)
-*   Git (for cloning the repository)
+* Python 3.8 or higher
+* Pip (Python package installer)
+* Git (for cloning the repository)
 
 ### Installation
 
-1.  **Clone the repository:**
+1. **Clone the repository:**
     ```bash
     git clone https://github.com/TheDeepDelve/IntelliMotion.git
     cd IntelliMotion
     ```
 
-2.  **Create and activate a virtual environment (recommended):**
+2. **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv venv
-    # On Windows
-    venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
+    venv\Scripts\activate  # On Windows
+    # source venv/bin/activate  # On macOS/Linux
     ```
 
-3.  **Install dependencies:**
-    The `requirements.txt` file should list all necessary packages.
+3. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-    Ensure `mediapipe` and `opencv-python` are included in your `requirements.txt`. If not, you can install them manually:
+    If needed, install manually:
     ```bash
     pip install mediapipe opencv-python numpy
     ```
 
 ### Running IntelliMotion
 
-The main script is typically `main.py`. You can run it from the command line.
+The main script is typically `main.py` (or use the relevant module, e.g., `HandTrackingModule.py`, `PoseTrackingModule.py`).
 
-**Basic Usage (Example - Adjust to your actual arguments):**
+**Example Usage:**
 
-*   **Process a video file using a specific MediaPipe solution (e.g., Pose):**
+* **Process a video file with pose detection:**
     ```bash
-    python main.py --input test_videos/your_video.mp4 --output output_videos/result.mp4 --solution pose --show
+    python main.py --input PoseVideos/1.mp4 --output output.mp4 --solution pose --show
     ```
 
-*   **Process a live webcam feed (camera index 0):**
+* **Process a live webcam feed:**
     ```bash
     python main.py --input 0 --solution pose --show --nosave
     ```
 
-**Command-line Arguments (Examples - Please customize based on your `main.py`):**
+**Command-line Arguments:**
 
-*   `--input`: Path to the input video file or camera index (e.g., `0` for default webcam).
-*   `--output` (optional): Path to save the processed output video.
-*   `--solution` (optional): Specify the MediaPipe solution to use (e.g., `pose`, `hands`, `holistic`). Defaults to a predefined solution (e.g., `pose`). **(You need to define this argument if you support multiple solutions)**
-*   `--show` (optional): Display the processed video frames in an OpenCV window. (Flag)
-*   `--nosave` (optional): Do not save the output video. (Flag)
-*   `--model_complexity` (optional, for MediaPipe Pose): Set model complexity (0, 1, or 2).
-*   `--min_detection_confidence` (optional): Minimum detection confidence for MediaPipe models.
-*   `--min_tracking_confidence` (optional): Minimum tracking confidence for MediaPipe models.
+* `--input`: Path to input video file or camera index (e.g., `0` for default webcam).
+* `--output` (optional): Path to save processed output video.
+* `--solution` (optional): MediaPipe solution to use (`pose`, `hands`, `holistic`).
+* `--show` (optional): Display processed video frames in an OpenCV window.
+* `--nosave` (optional): Do not save the output video.
+* `--model_complexity` (optional): Set model complexity (0, 1, or 2).
+* `--min_detection_confidence` (optional): Minimum detection confidence.
+* `--min_tracking_confidence` (optional): Minimum tracking confidence.
 
-**(Review and update the arguments above to match your `main.py`'s `argparse` setup. The arguments for MediaPipe solutions can vary.)**
+> **Note:** Update the above arguments to match your `main.py` or module's `argparse` setup.
+
+---
 
 ## Configuration
 
-*   **MediaPipe Solution Parameters:** Confidence thresholds, model complexity (for some solutions like Pose), and other solution-specific parameters can often be configured during the initialization of the MediaPipe solution in your script (e.g., `main.py`). Consider exposing these via command-line arguments if frequent changes are needed.
-*   **Visualization:** Appearance of landmarks, connections, and any drawn analytics can be customized in the drawing utility functions (likely in `utils/` or directly in `main.py`).
+* **MediaPipe Solution Parameters:** Confidence thresholds, model complexity, and other parameters can be set via command-line or in the script.
+* **Visualization:** Customize landmark appearance, connections, and overlays in drawing utilities (see `main.py` or `utils/`).
+* **Modularity:** Add new gesture/pose modules by extending the codebase (see `HandTrackingModule.py`, `PoseTrackingModule.py`).
+
+---
+
+## Project Structure
+
+```
+├── main.py                  # Main entry point (if present)
+├── HandTrackingModule.py    # Hand gesture tracking logic
+├── PoseTrackingModule.py    # Pose estimation logic
+├── Gym_Trainer.py           # Example: fitness/pose application
+├── Volume_Control.py        # Example: gesture-based volume control
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+├── Hand Landmarks.png       # Example output image
+├── Pose Landmarks.png       # Example output image
+├── Interface Images/        # UI/gesture illustration images
+│   ├── Full_Stretched_Arm.png
+│   ├── Full_Vol_Gesture.png
+│   └── ...
+├── PoseVideos/              # Example input videos
+│   ├── 1.mp4
+│   └── ...
+└── ...
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgements
+
+* [MediaPipe](https://mediapipe.dev/)
+* [OpenCV](https://opencv.org/)
+* [NumPy](https://numpy.org/)
+
+---
+
+> **Tip:** For best results, add a GIF or video demo of your system in action! You can use [ScreenToGif](https://www.screentogif.com/) or similar tools to record your screen and upload the GIF to your repository.
