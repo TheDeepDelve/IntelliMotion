@@ -43,17 +43,17 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 <!-- Stretched Arm States -->
 <p align="center">
-  <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220"/>
-  <img src="Interface Images/Partial_Stretched_Arm.png" alt="Partial Stretched Arm" width="220"/>
+  <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220" height="300"/>
+  <img src="Interface Images/Partial_Stretched_Arm.png" alt="Partial Stretched Arm" width="220" height="300"/>
   <br/>
   <em>Left: Full Stretched Arm - Detected pose with arm fully extended.<br>Right: Partial Stretched Arm - Detected pose with arm partially extended.</em>
 </p>
 
 <!-- Volume Gestures -->
 <p align="center">
-  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180"/>
-  <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180"/>
-  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180"/>
+  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180" height="220"/>
+  <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180" height="220"/>
+  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180" height="220"/>
   <br/>
   <em>Volume Gestures: Full, Intermediate, and Zero Volume hand gestures recognized for system control.</em>
 </p>
