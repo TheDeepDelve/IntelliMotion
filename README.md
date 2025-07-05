@@ -4,7 +4,7 @@
 [![Made with OpenCV](https://img.shields.io/badge/Made%20with-OpenCV-brightgreen.svg)](https://opencv.org/)
 [![Powered by MediaPipe](https://img.shields.io/badge/Powered%20by-MediaPipe-orange.svg)](https://mediapipe.dev/)
 
-IntelliMotion is a Python-based application for real-time intelligent motion analysis using Google's MediaPipe and OpenCV. It detects and tracks human body landmarks (pose, hands, face) for gesture recognition, pose estimation, and interactive applications. The modular design allows for easy extension and customization.
+IntelliMotion is a Python-based application for real-time intelligent motion analysis using Google's MediaPipe and OpenCV. It detects and tracks human body landmarks (pose and hands) for gesture recognition, pose estimation, and interactive applications. The modular design allows for easy extension and customization.
 
 ---
 
@@ -43,17 +43,17 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 <!-- Stretched Arm States -->
 <p align="center">
-  <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220" height="300"/>
-  <img src="Interface Images/Partial_Stretched_Arm.png" alt="Partial Stretched Arm" width="220" height="300"/>
+  <img src="Interface Images/Full_Stretched_Arm.png" alt="Full Stretched Arm" width="220" height="280"/>
+  <img src="Interface Images/Partial_Stretched_Arm.png" alt="Partial Stretched Arm" width="220" height="280"/>
   <br/>
   <em>Left: Full Stretched Arm - Detected pose with arm fully extended.<br>Right: Partial Stretched Arm - Detected pose with arm partially extended.</em>
 </p>
 
 <!-- Volume Gestures -->
 <p align="center">
-  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180" height="220"/>
-  <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180" height="220"/>
-  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180" height="220"/>
+  <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180" height="200"/>
+  <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180" height="200"/>
+  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180" height="200"/>
   <br/>
   <em>Volume Gestures: Full, Intermediate, and Zero Volume hand gestures recognized for system control.</em>
 </p>
@@ -76,7 +76,7 @@ E.g.,
 
 ## Key Features
 
-* **Real-time Landmark Detection:** Uses MediaPipe (Pose, Hands, Face Mesh) for fast, accurate detection of body landmarks.
+* **Real-time Landmark Detection:** Uses MediaPipe (Pose, Hands) for fast, accurate detection of body landmarks.
 * **Gesture & Pose Recognition:** Recognizes hand gestures and body poses for interactive applications (e.g., volume control, fitness tracking).
 * **Motion Analysis:** Tracks movement of specific landmarks, recognizes basic gestures/actions, and provides skeletal visualizations.
 * **Versatile Input:** Supports video files (MP4, AVI, etc.) and live webcam streams.
@@ -90,7 +90,7 @@ E.g.,
 
 * **Python 3.8+**
 * **OpenCV (cv2):** Video capture, image processing, and display.
-* **MediaPipe:** High-fidelity body landmark detection (Pose, Holistic, Hands, Face Mesh).
+* **MediaPipe:** High-fidelity body landmark detection (Pose, Holistic, Hands).
 * **NumPy:** Numerical operations.
 
 ---
@@ -129,32 +129,21 @@ E.g.,
 
 ### Running IntelliMotion
 
-The main script is typically `main.py` (or use the relevant module, e.g., `HandTrackingModule.py`, `PoseTrackingModule.py`).
+IntelliMotion is organized into separate modules for different use cases. There are no command-line arguments required. Simply run the relevant Python script for your desired functionality:
 
-**Example Usage:**
-
-* **Process a video file with pose detection:**
+- **To control system volume using hand gestures:**
     ```bash
-    python main.py --input PoseVideos/1.mp4 --output output.mp4 --solution pose --show
+    python Volume_Control.py
     ```
+    This will launch the volume control interface, allowing you to adjust your system's volume with hand gestures in real time.
 
-* **Process a live webcam feed:**
+- **To track your pose for gym/fitness applications:**
     ```bash
-    python main.py --input 0 --solution pose --show --nosave
+    python Gym_Trainer.py
     ```
+    This will start the gym trainer module, providing real-time pose tracking and feedback for your workouts.
 
-**Command-line Arguments:**
-
-* `--input`: Path to input video file or camera index (e.g., `0` for default webcam).
-* `--output` (optional): Path to save processed output video.
-* `--solution` (optional): MediaPipe solution to use (`pose`, `hands`, `holistic`).
-* `--show` (optional): Display processed video frames in an OpenCV window.
-* `--nosave` (optional): Do not save the output video.
-* `--model_complexity` (optional): Set model complexity (0, 1, or 2).
-* `--min_detection_confidence` (optional): Minimum detection confidence.
-* `--min_tracking_confidence` (optional): Minimum tracking confidence.
-
-> **Note:** Update the above arguments to match your `main.py` or module's `argparse` setup.
+You can also explore or extend other modules (such as `HandTrackingModule.py` or `PoseTrackingModule.py`) for additional or custom functionality.
 
 ---
 
@@ -169,39 +158,26 @@ The main script is typically `main.py` (or use the relevant module, e.g., `HandT
 ## Project Structure
 
 ```
-├── main.py                  # Main entry point (if present)
+├── main.py                  
 ├── HandTrackingModule.py    # Hand gesture tracking logic
 ├── PoseTrackingModule.py    # Pose estimation logic
-├── Gym_Trainer.py           # Example: fitness/pose application
-├── Volume_Control.py        # Example: gesture-based volume control
+├── Gym_Trainer.py           # Pose application
+├── Volume_Control.py        # Gesture-based volume control application
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Project documentation
-├── Hand Landmarks.png       # Example output image
-├── Pose Landmarks.png       # Example output image
+├── Hand Landmarks.png       # MediaPipe Hand Lanmarks
+├── Pose Landmarks.png       # MediaPipe Pose Landmarks
 ├── Interface Images/        # UI/gesture illustration images
 │   ├── Full_Stretched_Arm.png
 │   ├── Full_Vol_Gesture.png
 │   └── ...
-├── PoseVideos/              # Example input videos
+├── PoseVideos/              # Sample input videos
 │   ├── 1.mp4
 │   └── ...
 └── ...
 ```
 
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Acknowledgements
-
-* [MediaPipe](https://mediapipe.dev/)
-* [OpenCV](https://opencv.org/)
-* [NumPy](https://numpy.org/)
-
----
-
-> **Tip:** For best results, add a GIF or video demo of your system in action! You can use [ScreenToGif](https://www.screentogif.com/) or similar tools to record your screen and upload the GIF to your repository.
+<!-- > **Tip:** For best results, add a GIF or video demo of your system in action! You can use [ScreenToGif](https://www.screentogif.com/) or similar tools to record your screen and upload the GIF to your repository. -->
