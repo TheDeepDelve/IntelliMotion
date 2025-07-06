@@ -12,13 +12,13 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 <!-- Replace the below with your own GIF or video demo if available -->
 <p align="center">
-  <img src="Hand Landmarks.png" alt="Hand Landmarks Example" width="350"/>
+  <img src="Hand Landmarks.png" alt="Hand Landmarks Example" width="350" height="350"/>
   <br/>
   <em>Hand Landmarks Example: MediaPipe detects and annotates key points on the hand in real time.</em>
 </p>
 
 <p align="center">
-  <img src="Pose Landmarks.png" alt="Pose Landmarks Example" width="350"/>
+  <img src="Pose Landmarks.png" alt="Pose Landmarks Example" width="350" height="350"/>
   <br/>
   <em>Pose Landmarks Example: Full-body pose estimation with skeletal connections visualized.</em>
 </p>
@@ -63,9 +63,9 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 
 <!-- Volume System States -->
 <p align="center">
-  <img src="Interface Images/Full_Vol_System.png" alt="Full Volume System" width="180"/>
-  <img src="Interface Images/Intermediate_Vol_System.png" alt="Intermediate Volume System" width="180"/>
-  <img src="Interface Images/Zero_Vol_System.png" alt="Zero Volume System" width="180"/>
+  <img src="Interface Images/Full_Vol_System.png" alt="Full Volume System" width="180" height="120"/>
+  <img src="Interface Images/Intermediate_Vol_System.png" alt="Intermediate Volume System" width="180" height="120"/>
+  <img src="Interface Images/Zero_Vol_System.png" alt="Zero Volume System" width="180" height="120"/>
   <br/>
   <em>System Volume States: System interface reflecting full, intermediate, and zero volume gestures.</em>
 </p>
