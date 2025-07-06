@@ -56,7 +56,7 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 <p align="center">
   <img src="Interface Images/Full_Vol_Gesture.png" alt="Full Volume Gesture" width="180" height="200"/>
   <img src="Interface Images/Intermediate_Vol_Gesture.png" alt="Intermediate Volume Gesture" width="180" height="200"/>
-  <img src="Interface Images/Zero_Vol_Gesture.png" alt="Zero Volume Gesture" width="180" height="200"/>
+  <img src="Interface Images/Zero_Vol_Gesture1.png" alt="Zero Volume Gesture" width="180" height="200"/>
   <br/>
   <em>Volume Gestures: Full, Intermediate, and Zero Volume hand gestures recognized for system control.</em>
 </p>
