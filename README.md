@@ -183,6 +183,36 @@ You can also explore or extend other modules (such as `HandTrackingModule.py` or
 
 ---
 
+## Project Flowcharts
+
+To better understand the workflow and core processes of IntelliMotion, refer to the following flowcharts:
+
+<p align="center">
+  <img src="Flowcharts/Work Flow.png" alt="Overall Workflow" width="500"/>
+  <br/>
+  <em>Overall Workflow: High-level overview of the IntelliMotion system pipeline.</em>
+</p>
+
+<p align="center">
+  <img src="Flowcharts/Data PreProcessing.jpg" alt="Data Preprocessing Flowchart" width="400"/>
+  <br/>
+  <em>Data Preprocessing: Steps involved in preparing input data for analysis.</em>
+</p>
+
+<p align="center">
+  <img src="Flowcharts/Feature Extraction.jpg" alt="Feature Extraction Flowchart" width="400"/>
+  <br/>
+  <em>Feature Extraction: How key features are extracted from video frames or images.</em>
+</p>
+
+<p align="center">
+  <img src="Flowcharts/Gesture Classification.jpg" alt="Gesture Classification Flowchart" width="400"/>
+  <br/>
+  <em>Gesture Classification: The process of classifying gestures based on extracted features.</em>
+</p>
+
+---
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
