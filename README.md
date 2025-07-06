@@ -212,6 +212,4 @@ Feel free to open issues for bugs, suggestions, or questions. We appreciate your
 Harsh Deep - [LinkedIn](https://www.linkedin.com/in/harshdeep7199/) - [Email](harshdeep7199@gmail.com)
 
 
----
-
 <!-- > **Tip:** For best results, add a GIF or video demo of your system in action! You can use [ScreenToGif](https://www.screentogif.com/) or similar tools to record your screen and upload the GIF to your repository. -->
