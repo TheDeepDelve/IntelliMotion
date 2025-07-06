@@ -38,7 +38,6 @@ IntelliMotion is a Python-based application for real-time intelligent motion ana
 * [Project Structure](#project-structure)
 * [Contributing](#contributing)
 * [Contact](#contact)
-* [License](#license)
 
 ---
 
